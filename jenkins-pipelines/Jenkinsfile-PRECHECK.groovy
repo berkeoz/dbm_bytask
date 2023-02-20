@@ -12,6 +12,7 @@ try{
       echo "NODE_NAME = ${env.NODE_NAME}"
       //rootDir = pwd()
       feedbackToJira = false
+      echo "$feedbackToJira"
       myvars = load varsPath
       //if ticket number comes from a Jenkins parameter9
       if(env.TICKET){
