@@ -15,12 +15,16 @@ try{
       //if ticket number comes from a Jenkins parameter9
       if(env.TICKET){
         issueKey = env.TICKET
+        echo "$issueKey"
         feedbackToJira = false
+        echo "$feedbackToJira"
       }
       //if ticket number comes from Jira
       else{
         issueKey = env.JIRA_ISSUE_KEY
+        echo "$issueKey"
         feedbackToJira = true
+        echo "$feedbackToJira"
       }
       packageFolder = issueKey
     }
